@@ -106,3 +106,11 @@ After calling removeElement(concept), check the value of concept by logging it t
 Notice that in both cases, the change to the array was maintained outside of the function! */
 console.log(concept);
 
+/* LESSON 11 - Nested Arrays
+
+1. Let’s make a nested array! Create a variable numberClusters. Assign as its value an array with three array elements.
+The first array element should hold the elements 1 and 2 in that order.
+The second array element should hold the elements 3 and 4 in that order.
+The third array element should hold the elements 5 and 6 in that order. */
+const numberClusters = [[1, 2], [3, 4], [5, 6]];
+const target = numberClusters[2][1];
