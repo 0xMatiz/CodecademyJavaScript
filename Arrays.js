@@ -29,11 +29,11 @@ const objectives = ['Learn a new language', 'Read 52 books', 'Run a marathon'];
 console.log(objectives.length);
 
 //LESSON 7 - The .push() Method
-const chores = ['wash dishes', 'do laundry', 'take out trash'];
+const choresOne = ['wash dishes', 'do laundry', 'take out trash'];
 
 // 1. Add two elements to the chores array using .push().
 chores.push('organize the house', 'clean the table');
-console.log(chores);
+console.log(choresOne);
 
 //LESSON 8 - The .pop() Method
 const chores = ['wash dishes', 'do laundry', 'take out trash', 'cook dinner', 'mop floor'];
@@ -105,6 +105,15 @@ removeElement(concept);
 After calling removeElement(concept), check the value of concept by logging it to console.
 Notice that in both cases, the change to the array was maintained outside of the function! */
 console.log(concept);
+
+/* LESSON 11 - Nested Arrays
+
+1. Let’s make a nested array! Create a variable numberClusters. Assign as its value an array with three array elements.
+The first array element should hold the elements 1 and 2 in that order.
+The second array element should hold the elements 3 and 4 in that order.
+The third array element should hold the elements 5 and 6 in that order. */
+const numberClustersOne = [[1, 2], [3, 4], [5, 6]];
+const targetOne = numberClustersOne[2][1];
 
 /* LESSON 11 - Nested Arrays
 
