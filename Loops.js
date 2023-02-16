@@ -76,3 +76,65 @@ for (let a = 0; a < bobsFollowers.length; a++ ){
         }
     }
 }
+
+
+//LESSON 7 - The While Loop
+
+const cards = ['diamond', 'spade', 'heart', 'club'];
+
+// Write your code below
+
+/* 1. Below the cards array, declare a variable, currentCard, with the let keyword but don’t assign it a value. */
+let currentCard;
+
+/* 2. Create a while loop with a condition that checks if the currentCard does not have that value 'spade'.
+Inside the block of your while loop, add the following line of code:
+currentCard = cards[Math.floor(Math.random() * 4)];
+Math.floor(Math.random() * 4) will give us a random number from 0 to 3. We’ll use this number to index the cards array, and assign the value of currentCard to a random element from that array. */
+while (currentCard !== 'spade') {
+  console.log(currentCard);
+  currentCard = cards[Math.floor(Math.random() * 4)];
+}
+
+/* 3. Awesome! Your loop is running, but you can’t tell because it doesn’t output anything. Let’s add a console.log() statement to our while block. Inside the block, after you assign currentCard a new value, log currentCard to the console.
+
+For fun you can run your code a few times and see how the output changes! */
+
+
+//LESSON 8 - Do...While Statements
+
+// Write your code below
+
+/* 1. We’d like a program to simulate part of the cake-baking process. Depending on the recipe, a different number of cups of sugar is required. Create the variable cupsOfSugarNeeded, and assign it a number value of your choosing.
+The cups of sugar must be added to the batter one at a time. Declare the variable cupsAdded and assign it the value 0. */
+let cupsOfSugarNeeded = 7;
+let cupsAdded = 0;
+
+/* 2. We have a sweet tooth, so we want to add at least one cup of sugar to the batter even if the value of cupsOfSugarNeeded is 0.
+Create a do...while loop which increments cupsAdded by one while cupsAdded is less than cupsOfSugarNeeded.
+In order to help us visualize the output on each iteration of the loop, add a console.log within the do...while block and log the value of cupsAdded. */
+do {
+  console.log(cupsAdded += 1)
+} while (cupsOfSugarNeeded > cupsAdded);
+
+
+//LESSON 9 - The break Keyword
+
+const rapperArray = ["Lil' Kim", "Jay-Z", "Notorious B.I.G.", "Tupac"];
+
+// Write your code below
+
+//1. Log each element from rapperArray in a for loop with the iterator variable i.
+for (let i = 0; i < rapperArray.length; i++) {
+  console.log(rapperArray[i]); // The log always goes behind "if"
+  if (rapperArray[i] === "Notorious B.I.G.") {
+    
+    break;
+  }
+  
+}
+
+/* 2. After the for loop, log the string "And if you don't know, now you know." to the console. Note: since there’s a single quote character, ', in our string, we can use double quotes around the string to make sure character prints. */
+console.log("And if you don't know, now you know.");
+
+/* 3. Add a break inside your loop’s block that breaks out of the loop if the element at the current index in the rapperArray is 'Notorious B.I.G.'. Log the element before breaking out of the loop. */
