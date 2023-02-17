@@ -58,3 +58,28 @@ Use .map() to create a new array that contains the first character of each strin
 Use .map() to create a new array that contains the first character of each string in the animals array. Save the new array to a const variable named secretMessage. */
 
 /* 2. Use .map() to divide all the numbers in bigNumbers by 100. Save the returned values to a variable declared with const called smallNumbers. */
+
+
+//LESSON 4 - The .filter() Method
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+const smallNumbers = randomNumbers.filter(randomNumbers => {
+  return randomNumbers < 250;
+});
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const longFavoriteWords = favoriteWords.filter(favoriteWords => {
+  return favoriteWords.length > 7;
+})
+// Call .filter() on favoriteWords below
+
+
+
+/* 1. Call the .filter() method on randomNumbers to return values that are less than 250. Save them to a new array called smallNumbers, declared with const. */
+
+/* 2. Now let’s work with an array of strings. Invoke .filter() on the favoriteWords array to return elements that have more than 7 characters. Save the returned array to a const variable named longFavoriteWords. */
+
+
