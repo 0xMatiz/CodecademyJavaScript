@@ -14,11 +14,11 @@ fruits.forEach(fruit => console.log(`I want to eat a ${fruit}.`));
 
 //LESSON 3 - The .map() Method
 
-const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+const animalss = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
 
 // Create the secretMessage array below
-const secretMessage = animals.map(animals => {
-  return animals[0];
+const secretMessage = animalss.map(animalss => {
+  return animalss[0];
 })
 
 console.log(secretMessage.join(''));
@@ -26,7 +26,7 @@ console.log(secretMessage.join(''));
 const bigNumbers = [100, 200, 300, 400, 500];
 
 // Create the smallNumbers array below
-const smallNumbers = bigNumbers.map(bignumbers => {
+const smallNumberss = bigNumbers.map(bignumbers => {
   return bignumbers / 100;
   console.log(smallNUmbers);//LESSON 3 - The .map() Method
 
@@ -83,3 +83,18 @@ const longFavoriteWords = favoriteWords.filter(favoriteWords => {
 /* 2. Now let’s work with an array of strings. Invoke .filter() on the favoriteWords array to return elements that have more than 7 characters. Save the returned array to a const variable named longFavoriteWords. */
 
 
+//LESSON 5 - The .findIndex() Method
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+/* 1. Invoke .findIndex() on the animals array to find the index of the element that has the value 'elephant' and save the returned value to a const variable named foundAnimal. */
+const foundAnimal = animals.findIndex(animals => {
+  return animals === 'elephant';
+})
+
+/* 2. Let’s see if we can find the index of the first animal that starts with the letter 's'.
+Call .findIndex() on the animals array and return the index of the first element that starts with 's'. Assign the returned value to a const variable named startsWithS. */
+
+const startsWithS = animal.findIndex(animals => {
+  return animals.startsWith('s');
+})
