@@ -69,3 +69,4 @@ checkB stores the invocation of the func callback, with val as the argument. */
 /* 3. Finally, using console.log(), log the invocation of checkConsistentOutput() with two arguments: the addTwo() function and any number. */
 
 
+//LESSON FINISHED
