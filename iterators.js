@@ -98,3 +98,24 @@ Call .findIndex() on the animals array and return the index of the first element
 const startsWithS = animal.findIndex(animals => {
   return animals.startsWith('s');
 })
+
+
+//LESSON 5 - The .findIndex() Method
+
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+/* 1. Invoke .findIndex() on the animals array to find the index of the element that has the value 'elephant' and save the returned value to a const variable named foundAnimal. */
+const foundAnimal = animals.findIndex(animal => {
+  return animal === 'elephant';
+})
+
+/* 2. Let’s see if we can find the index of the first animal that starts with the letter 's'.
+Call .findIndex() on the animals array and return the index of the first element that starts with 's'. Assign the returned value to a const variable named startsWithS. */
+
+const startsWithS = animals.findIndex(animal => {
+  return animal[0] === 's' ? true : false;
+}) /* the line above does this:
+return animal[0](search the first character of each animal that is why 'animal' exists, rather than "animals") === 's' (that is equal to 's')
+? true : false (checks if this is true, if it is returns a value, if not, doesn't returns anything)
+
+/* "animals" is different from 'animal' in the function because it is a callback function */
