@@ -151,3 +151,8 @@ console.log(words.some(() => {
 // Make sure to uncomment the code below and fix the incorrect code before running it
 
 // console.log(interestingWords.every((word) => { } ));
+
+/* 1. In the code editor, there is an array called words. We want to create a new array of interesting words. The first thing we want to do is check if there are words that are fewer than 6 characters long. There is something missing in the words.some() method call. Fix this method so that true is printed to the console.
+For more information browse MDN’s documentation on .some() . */
+
+
