@@ -42,4 +42,26 @@ let spaceship = {
   /* 1. Let’s use the dot operator to access the value of numCrew from the spaceship object in the code editor. Create a variable crewCount and assign the spaceship‘s numCrew property to it.
   
   2. Again using the dot operator, create a variable planetArray and assign the spaceship‘s flightPath property to it. */
+
+
+  //LESSON 4 - Bracket Notation
+
+let spaceship = {
+    'Fuel Type' : 'Turbo Fuel',
+    'Active Mission' : true,
+    homePlanet : 'Earth', 
+    numCrew: 5
+   };
   
+  let propName =  'Active Mission';
+  
+  // Write your code below
+  
+  let isActive = spaceship['Active Mission'];
+  
+  console.log(spaceship['Active Mission']);
+  
+  /* 1. Let’s use bracket notation to access the value of 'Active Mission' from the spaceship object in the code editor. Create a variable isActive and assign the spaceship‘s 'Active Mission' property to it.
+  
+  2. Using bracket notation and the propName variable provided, console.log
+  () the value of the 'Active Mission' property. */
