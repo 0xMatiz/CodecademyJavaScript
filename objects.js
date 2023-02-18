@@ -65,3 +65,24 @@ let spaceship = {
   
   2. Using bracket notation and the propName variable provided, console.log
   () the value of the 'Active Mission' property. */
+
+
+  // LESSON 5 - Property Assignment
+
+let spaceship = {
+    'Fuel Type' : 'Turbo Fuel',
+    homePlanet : 'Earth',
+    color: 'silver',
+    'Secret Mission' : 'Discover life outside of Earth.'
+  };
+  
+  // Write your code below
+  
+  spaceship.color = 'glorious gold';
+  
+  
+  
+  /* 1. Reassign the color property of the spaceship object to have a value of 'glorious gold'
+  2. Without changing lines 1 - 6, add a numEngines property with a numeric value between 1 and 10 to the spaceship object.
+  3.
+  */
