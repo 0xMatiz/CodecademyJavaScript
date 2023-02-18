@@ -86,3 +86,26 @@ let spaceship = {
   2. Without changing lines 1 - 6, add a numEngines property with a numeric value between 1 and 10 to the spaceship object.
   3. Use the delete operator to remove the 'Secret Mission' property from the spaceship object.
   */
+
+
+  //LESSON 6 - Methods
+
+let retreatMessage = 'We no longer wish to conquer your planet. It is full of dogs, which we do not care for.';
+
+// Write your code below
+
+const alienShip = {
+  retreat () {
+    console.log(retreatMessage)
+  }, takeOff () {
+    console.log('Spim... Borp... Glix... Blastoff!')
+  }
+};
+
+console.log(alienShip.retreat());
+console.log(alienShip.takeOff());
+
+/* 1. Below the retreatMessage variable in the code editor, create an alienShip object. It should contain a method retreat() which will console.log() the retreatMessage. 
+2. Add another method to your object literal. This method, takeOff(), should console.log() the string 'Spim... Borp... Glix... Blastoff!'.
+3. Invoke your two methods: first .retreat() then .takeOff().
+*/
