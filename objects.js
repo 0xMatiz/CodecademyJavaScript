@@ -107,5 +107,7 @@ console.log(alienShip.takeOff());
 
 /* 1. Below the retreatMessage variable in the code editor, create an alienShip object. It should contain a method retreat() which will console.log() the retreatMessage. 
 2. Add another method to your object literal. This method, takeOff(), should console.log() the string 'Spim... Borp... Glix... Blastoff!'.
-3. Invoke your two methods: first .retreat() then .takeOff().
-*/
+3. Invoke your two methods: first .retreat() then .takeOff(). */
+
+
+
