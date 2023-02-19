@@ -229,3 +229,5 @@ console.log(`${spaceship.crew[crewMember].name}: ${spaceship.crew[crewMember].de
 2. Using for...in, iterate through the spaceship.crew object in the code editor and console.log() a list of crew names and degrees in the following format: '[crew member's name]: [crew member's degree]', i.e.,'Lily: Computer Engineering'.
 3. Using for...in, iterate through the spaceship.crew object in the code editor and console.log() a list of crew names and degrees in the following format: '[crew member's name]: [crew member's degree]', i.e.,'Lily: Computer Engineering'. 
 */
+
+//OBJECTS LESSON FINISHED!!!
