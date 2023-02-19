@@ -137,4 +137,23 @@ const plantNeedsWater = function (day) {
   Log plantNeedsWater('Tuesday') to the console. If it worked correctly, you should see false logged to the console.*/
 
 
+  //LESSON 9 - Arrow Functions
+
+const plantNeedsWaterR = (day) => {
+    if (day === 'Wednesday') {
+      return true;
+    } else {
+      return false;
+    }
+  };
   
+  /*1.Change plantNeedsWater() to use arrow function syntax.*/
+
+
+  //LESSON 10 - Concise Body Arrow Functions
+
+const plantNeedsWatEr = day => day === 'Wednesday' ? true : false;  
+
+/*1.Let’s refactor plantNeedsWatEr() to be a concise body. Notice that we’ve already converted the if/else statement to a ternary operator to make the code fit on one line.*/
+
+
