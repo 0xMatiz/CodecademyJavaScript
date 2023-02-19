@@ -25,7 +25,7 @@ let fasterShip = {
 
 //LESSON 3 - Accessing Properties
 
-let spaceship = {
+let spaceshipp = {
     homePlanet: 'Earth',
     color: 'silver',
     'Fuel Type': 'Turbo Fuel',
@@ -35,9 +35,9 @@ let spaceship = {
   
   // Write your code below
   
-  let crewCount = spaceship.numCrew;
+  let crewCount = spaceshipp.numCrew;
   
-  let planetArray = spaceship.flightPath;
+  let planetArray = spaceshipp.flightPath;
   
   /* 1. Let’s use the dot operator to access the value of numCrew from the spaceship object in the code editor. Create a variable crewCount and assign the spaceship‘s numCrew property to it.
   
@@ -46,7 +46,7 @@ let spaceship = {
 
   //LESSON 4 - Bracket Notation
 
-let spaceship = {
+let spaceshipss = {
     'Fuel Type' : 'Turbo Fuel',
     'Active Mission' : true,
     homePlanet : 'Earth', 
@@ -57,9 +57,9 @@ let spaceship = {
   
   // Write your code below
   
-  let isActive = spaceship['Active Mission'];
+  let isActive = spaceshipss['Active Mission'];
   
-  console.log(spaceship['Active Mission']);
+  console.log(spaceshipss['Active Mission']);
   
   /* 1. Let’s use bracket notation to access the value of 'Active Mission' from the spaceship object in the code editor. Create a variable isActive and assign the spaceship‘s 'Active Mission' property to it.
   
@@ -69,7 +69,7 @@ let spaceship = {
 
   // LESSON 5 - Property Assignment
 
-let spaceship = {
+let spaceships = {
     'Fuel Type' : 'Turbo Fuel',
     homePlanet : 'Earth',
     color: 'silver',
@@ -78,9 +78,9 @@ let spaceship = {
   
   // Write your code below
   
-  spaceship.color = 'glorious gold';
-  spaceship.numEngines = Math.random(Math.floor()) * 7;
-  delete spaceship['Secret Mission'];
+  spaceships.color = 'glorious gold';
+  spaceships.numEngines = Math.random(Math.floor()) * 7;
+  delete spaceships['Secret Mission'];
   
   /* 1. Reassign the color property of the spaceship object to have a value of 'glorious gold'
   2. Without changing lines 1 - 6, add a numEngines property with a numeric value between 1 and 10 to the spaceship object.
@@ -112,7 +112,7 @@ console.log(alienShip.takeOff());
 
 //LESSON 7 - Nested Objects
 
-let spaceship = {
+let spaceshiP = {
   passengers: [{
     medic: 'impostor', 
     engineer: 'JS Coder'}],
@@ -143,9 +143,9 @@ let spaceship = {
   }
 }; 
 
-let capFave = spaceship.crew.captain['favorite foods'][0];
+let capFave = spaceshiP.crew.captain['favorite foods'][0];
 
-let firstPassenger = spaceship.passengers[0][0];
+let firstPassenger = spaceshiP.passengers[0][0];
 
 console.log(firstPassenger);
 
@@ -159,15 +159,15 @@ When you want to target an index in an array just put one addition [] per each a
 
 //LESSON 8 - Pass By Reference
 
-let spaceship = {
+let spaceShip = {
   'Fuel Type' : 'Turbo Fuel',
   homePlanet : 'Earth'
 };
 
 // Write your code below
 
-let greenEnergy = spaceship => {
- spaceship['Fuel Type'] = 'avocado oil';
+let greenEnergy = spaceShip => {
+ spaceShip['Fuel Type'] = 'avocado oil';
 };
 
 let remotelyDisable = obj => {
@@ -175,10 +175,10 @@ let remotelyDisable = obj => {
 };
 /* Whenever you declare a function, "spaceship" or "obj" could have any name you want, you are going to change it later anyways. 
 Now when we put real object name like in the function call below, that value is the one who the function is going to target*/
-greenEnergy(spaceship);
-remotelyDisable(spaceship);
+greenEnergy(spaceShip);
+remotelyDisable(spaceShip);
 
-console.log(spaceship);
+console.log(spaceShip);
 
 /*
 1. Write a function greenEnergy() that has an object as a parameter and sets that object’s 'Fuel Type' property to 'avocado oil'.
