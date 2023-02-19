@@ -1,6 +1,6 @@
 //LESSON 2 - The this Keyword
 
-const robot = {
+const robott = {
   model: '1E78V2',
   energyLevel: 100,
   provideInfo() {
@@ -8,7 +8,7 @@ const robot = {
   }
 };
 
-console.log(robot.provideInfo());
+console.log(robott.provideInfo());
 
 /*
 1. Let’s create a new object to practice using this.
@@ -23,14 +23,14 @@ Replace ‘MODEL’ and ‘ENERGYLEVEL’ with the calling object’s model and 
 
 //LESSON 3 - Arrow Functions and this
 
-const robot = {
+const robots = {
   energyLevel: 100,
   checkEnergy() {
     console.log(`Energy is currently at ${this.energyLevel}%.`)
   }
 }
 
-robot.checkEnergy();
+robots.checkEnergy();
 
 
 
@@ -43,5 +43,30 @@ After refactoring the method, notice that .checkEnergy() has access to the other
 Arrow Functions and "this." method doesnt get along. Because the arrow function makes the "this." method point to its target on a global scope.
 This by consecuence returns undefined unless there is a global scope target equal to ours.
 */
+
+
+//LESSON 4 - Privacy
+
+const robot = {
+  _energyLevel: 'high',
+  recharge(){
+    this._energyLevel += 30;
+    console.log(`Recharged! Energy is currently at ${this._energyLevel}%.`)
+  }
+};
+
+console.log(robot.recharge()); /*It returns output:
+Recharged! Energy is currently at high30%.
+undefined*/
+
+/*1.Below the robot object, reassign the _energyLevel property to 'high'.
+
+2.Now take a look at the new recharge method in robot. .recharge() will add 30 to _energyLevel.
+
+What will happen now that _energyLevel isn’t a number?
+
+Call .recharge() on robot to find out.
+
+Notice that a funky string is printed to the console! This is known as a side-effect of type-coercion. No need to worry about what this means for now, but it’s important to understand that you can cause unwanted side-effects when mutating objects and their properties.*/
 
 
