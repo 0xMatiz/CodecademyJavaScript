@@ -269,3 +269,7 @@ To find how to use Object.entries(), read the documentation at MDN.
 
 Declare a const variable named newRobot. newRobot will be a new object that has all the properties of robot and the properties in the following object: {laserBlaster: true, voiceRecognition: true}. Make sure that you are not changing the robot object!
 */
+
+
+/*ADVANCED OBJECTS MODULE FINISHED!!!
+YOU HAVE FINISHED ALL THE FREE CONTENT ABOUT JAVASCRIPT!*/
